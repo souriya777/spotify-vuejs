@@ -1,5 +1,5 @@
 module.exports = {
   pwa: {
-    name: "spotify-vuejs"
+    name: 'spotify-vuejs'
   }
-};
+}
