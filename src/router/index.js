@@ -6,12 +6,20 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: { name: 'albums' }
+    name: 'home',
+    component: () => import('../views/Home')
   },
   {
     path: '/albums',
     name: 'albums',
-    component: () => import('../views/Albums')
+    component: () => import('../views/Albums'),
+    props: true
+  },
+  {
+    path: '/albums/:albumId',
+    name: 'album',
+    component: () => import('../views/Album'),
+    props: true
   },
   {
     path: '/playlists',
