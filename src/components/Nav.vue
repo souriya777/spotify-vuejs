@@ -46,16 +46,6 @@
     </ul>
   </nav>
 </template>
-<script>
-import LogoIcon from './icons/LogoIcon'
-import HomeIcon from './icons/HomeIcon'
-import AlbumIcon from './icons/AlbumIcon'
-import PlaylistIcon from './icons/PlaylistIcon'
-import SearchIcon from './icons/SearchIcon'
-export default {
-  components: { LogoIcon, HomeIcon, AlbumIcon, PlaylistIcon, SearchIcon }
-}
-</script>
 <style lang="stylus">
 .nav
   padding-top 2.4rem
