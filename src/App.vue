@@ -1,20 +1,21 @@
 <template>
   <div class="app">
     <Nav />
-    <div class="browser">
+    <browser>
       <div style="text-align: left">width: {{ currentWidth }}px</div>
       <router-view />
-    </div>
+    </browser>
     <player />
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav'
-import Player from './components/Player'
+import Nav from '@/components/Nav'
+import Browser from '@/components/Browser'
+import Player from '@/components/Player'
 
 export default {
-  components: { Nav, Player },
+  components: { Nav, Browser, Player },
   data() {
     return {
       currentWidth: 0
@@ -72,7 +73,6 @@ body
 
 .browser
   grid-area: browser
-  background-color color-background-2
 
 .player
   grid-area: player
