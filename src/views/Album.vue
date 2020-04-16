@@ -1,6 +1,6 @@
 <template>
   <div class="album">
-    <h1>&gt; Album {{ albumId }}</h1>
+    <h1>&gt; Album {{ albumId }} 🔥⛩</h1>
   </div>
 </template>
 <script>

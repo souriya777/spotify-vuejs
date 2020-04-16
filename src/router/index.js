@@ -10,10 +10,14 @@ const routes = [
     component: () => import('../views/Home')
   },
   {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login')
+  },
+  {
     path: '/albums',
     name: 'albums',
-    component: () => import('../views/Albums'),
-    props: true
+    component: () => import('../views/Albums')
   },
   {
     path: '/albums/:albumId',

@@ -2,7 +2,7 @@
   <div class="app">
     <Nav />
     <browser>
-      <div style="text-align: left">width: {{ currentWidth }}px</div>
+      <div style="text-align: left;">width: {{ currentWidth }}px</div>
       <router-view />
     </browser>
     <player />
