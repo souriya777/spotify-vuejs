@@ -72,6 +72,7 @@ body
 
 .browser
   grid-area: browser
+  background-color color-background-2
 
 .player
   grid-area: player
