@@ -13,11 +13,7 @@ server.get(/.*/, (_, res) => {
 })
 
 server.get('/api', (_, res) => {
-  res.send('get /api')
-})
-
-server.get('*', (_, res) => {
-  res.end('elsewhere :)')
+  res.send('TODO api')
 })
 
 const PORT = process.env.SERVER_PORT | 3000
