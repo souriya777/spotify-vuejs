@@ -10,6 +10,13 @@
       <code>{{ accessToken }}</code>
       <h2>Refresh token</h2>
       <code>{{ refreshToken }}</code>
+      <div v-if="userId">
+        <h2>User ID</h2>
+        <code>{{ userId }}</code>
+      </div>
+      <div>
+        <button @click="spotifyMe">SPOTIFY ME</button>
+      </div>
     </div>
   </div>
 </template>
@@ -24,6 +31,14 @@ export default {
       accessToken: '',
       refreshToken: '',
       spotifyResult: ''
+    }
+  },
+  computed: {
+    userId() {
+      return this.spotifyResult?.data?.id
+    },
+    spotifyResultJson() {
+      return JSON.stringify(this.spotifyResult)
     }
   },
   async created() {
@@ -80,6 +95,13 @@ export default {
         .catch(function (error) {
           instance.token = error.toJSON()
         })
+    },
+    async spotifyMe() {
+      this.spotifyResult = await axios.get('https://api.spotify.com/v1/me', {
+        headers: {
+          Authorization: 'Bearer ' + this.accessToken
+        }
+      })
     }
   }
 }
