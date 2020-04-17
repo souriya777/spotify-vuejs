@@ -19,6 +19,3 @@ server.get('/api', (_, res) => {
 const PORT = process.env.SERVER_PORT | 3000
 console.log(`Server listen on port ${PORT}`)
 server.listen(PORT)
-
-// TODO
-// "start": "nodemon server.js & yarn run serve"
