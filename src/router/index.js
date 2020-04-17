@@ -15,6 +15,11 @@ const routes = [
     component: () => import('../views/Login')
   },
   {
+    path: '/spotify-api',
+    name: 'spotify-api',
+    component: () => import('../views/SpotifyApi')
+  },
+  {
     path: '/albums',
     name: 'albums',
     component: () => import('../views/Albums')

@@ -12,6 +12,11 @@
         </router-link>
       </li>
       <li class="nav-item">
+        <router-link to="/spotify-api">
+          <span class="nav-item_label">Spotify API</span>
+        </router-link>
+      </li>
+      <li class="nav-item">
         <router-link to="/">
           <span class="nav-item_icon">
             <home-icon />
